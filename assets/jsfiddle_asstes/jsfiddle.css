@@ -1,0 +1,96 @@
+span,div{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 10px 20px;
+    line-height: 2em; 
+    color: #fff;
+    
+    border: 1px solid #777;
+}
+
+span{
+    width: 150px;
+    float:left;
+}
+
+div{
+    width: 250px;
+}
+
+.box_1,
+.box_4,
+.box_7{
+    background: #42b4c4;
+}
+
+.box_2,
+.box_5,
+.box_8{
+    background: #9cca56;
+}
+
+.box_3,
+.box_6,
+.box_9{
+    background: #ea9150;
+}
+
+.box_1:before,
+.box_2:before,
+.box_3:before,
+.box_4:before,
+.box_5:before,
+.box_6:before,
+.box_7:before,
+.box_8:before,
+.box_9:before{
+    position: relative;
+    top: -8px;
+    left: -5px;
+    color: #777;
+    font-size: 16px;
+    line-height: 1em;
+    padding: 3px;
+    border: 1px solid #777;
+    border-top: 0;
+}
+
+.box_1:before{
+    content: "1";
+}
+
+.box_2:before{
+    content: "2";
+}
+
+.box_3:before{
+    content: "3";
+}
+
+.box_4:before{
+    content: "4";
+}
+
+.box_5:before{
+    content: "5";
+}
+
+.box_6:before{
+    content: "6";
+}
+
+.box_7:before{
+    content: "7";
+}
+
+.box_8:before{
+    content: "8";
+}
+
+.box_9:before{
+    content: "9";
+}
+
+
+//http://www.agulbickij.com/style/jsfiddle.css
