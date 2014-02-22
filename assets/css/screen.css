@@ -16,6 +16,7 @@ html, body, .wrapper {
 }
 
 
+
 /* Body
 ================================================== */
 html, body {
@@ -23,6 +24,7 @@ html, body {
 }
 .wrapper {
   min-height: 100%;
+
 }
 body {
   overflow-x: hidden;
@@ -86,9 +88,10 @@ a:hover {
 ================================================== */
 /* White container that is the "page" */
 .wrapper {
-  max-width: 1500px;
+  //max-width: 1500px;
   margin: 0 auto;
-  background: #fff;
+  //background: #fff;
+  background: url('/assets/img/bg.png');
 }
 
 /* Containers to keep content to a set width */
@@ -127,6 +130,7 @@ a:hover {
 }
 #logo {
   float: left;
+  width: 40%;
 }
 .nav-primary {
   float: right;
@@ -148,10 +152,16 @@ a:hover {
 }
 
 #logo h1 {
-  width: 200px;
   height: 30px;
   margin-left: 0px;
   letter-spacing: 1px;
+  font-size: 24px;
+}
+
+#logo h1 span{
+  text-transform: none;
+  color: #777;
+  font-size: 13px;
 }
 
 .nav li:first-child {
@@ -289,6 +299,20 @@ div.cover > img {
   max-height: 600px;
   margin-bottom: 26px;
 }
+
+.art-body-inner ol,
+.art-body-inner ul{
+  padding-left: 40px;
+}
+
+.art-body-inner pre{
+  border: 1px solid #e1e1e8;
+  padding: 15px;
+  background-color: #eee;
+  margin-bottom: 15px;
+  color: #555;
+}
+
 .art-body-inner img.center {
   display: block;
   margin-left: auto;
@@ -371,23 +395,26 @@ div.cover > img {
 .footer a {
   font-family: "proxima-nova", "helvetica neue", "helvetica", sans-serif;
   font-size: 13px;
-  text-transform: uppercase;
   color: #777;
 }
 .footer a:hover {
   color: #000;
 }
 .back-to-top,
-.footer-nav,
-.offsite-links {
+.footer-nav{
   width: 33.3%;
   float: left;
+  text-transform: uppercase;
 }
+
 .footer-nav {
   text-align: center;
 }
 .offsite-links {
+  width: 33.3%;
   text-align: right;
+  float: right;
+  text-transform: none;
 }
 .footer .twitter-link:hover {
   color: #0084B4;
@@ -591,6 +618,7 @@ div.cover > img {
   }
   .back-to-top {
     text-align: left;
+    text-transform: uppercase;
   }
   .footer-nav {
     text-align: right;
@@ -674,7 +702,7 @@ img.right {
 
 .art-header-inner {
   -webkit-animation: le-fade .5s 0 1 ease-out;
-  -moz-animation: le-fade .5s 0 1 ease-out;
+  -moz-animation: le-fade .5s 0s 1 ease-out;
 }
 
 .art-list,
@@ -683,4 +711,13 @@ img.right {
 .art-body {
   -webkit-animation: le-fade .5s 0s 1 ease-out;
   -moz-animation: le-fade .5s 0s 1 ease-out;
+}
+
+.egzample{
+    margin-bottom: 13px;
+}
+
+.egzample span{
+    color: #777;
+    font-size: 0.8em;
 }
